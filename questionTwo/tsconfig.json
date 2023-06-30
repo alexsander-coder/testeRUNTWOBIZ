@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es5",
+    "moduleResolution": "node",
+    "module": "es2020",
+    "lib": ["ES2015", "DOM"],
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/infrastructure/ui/main.ts"
+  ]
+}

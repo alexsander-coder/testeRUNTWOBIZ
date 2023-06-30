@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Senha Válida</title>
+</head>
+<style>
+  html, body {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    flex-direction: column;
+  }
+  input{
+    margin-bottom: 9%;
+  }
+  input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+</style>
+<body>
+  <h1>Contador de Senha Válida</h1>
+
+  <label for="lowerLimit">Limite inferior:</label>
+  <input type="number" id="lowerLimit" />
+
+  <label for="upperLimit">Limite superior:</label>
+  <input type="number" id="upperLimit" />
+
+  <button onclick="calculateValidPasswords()">Calcular</button><br>
+
+  <div id="result"></div>
+  
+  <script src="dist/main.js"></script>
+</body>
+</html>
